@@ -1,0 +1,591 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SNR Digital Marketing - Innovative Digital Solutions</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#6d0df2',    // Super Purple
+                        secondary: '#92f20d',  // Bright Light Green
+                        action: '#FF7F50',     // Action Orange
+                        growth: '#6FD08C',     // Growth Green
+                        softgrey: '#F8F8F8',   // Soft Grey
+                        reading: '#F20D1F',    // Reading Red
+                        accent: '#0DF2E0'      // Accent Color
+                    },
+                    fontFamily: {
+                        montserrat: ['Montserrat', 'sans-serif'],
+                        opensans: ['Open Sans', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Open+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Open Sans', sans-serif;
+        }
+        h1, h2, h3, h4, h5, h6, .font-heading {
+            font-family: 'Montserrat', sans-serif;
+        }
+        .hero-gradient {
+            background: linear-gradient(135deg, rgba(109, 13, 242, 0.9), rgba(146, 242, 13, 0.6));
+        }
+        .service-card:hover {
+            transform: translateY(-10px);
+        }
+        .testimonial-card:hover {
+            transform: translateY(-5px);
+        }
+    </style>
+</head>
+<body class="bg-softgrey">
+    <!-- Navigation -->
+    <nav class="bg-primary text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16">
+                <div class="flex">
+                    <div class="flex-shrink-0 flex items-center">
+                        <a href="index.html" class="font-montserrat font-bold text-2xl">SNR Digital</a>
+                    </div>
+                </div>
+                <div class="hidden md:flex md:items-center md:space-x-6">
+                    <a href="index.html" class="font-montserrat font-medium text-secondary px-3 py-2 rounded-md text-sm">Home</a>
+                    <a href="services.html" class="font-montserrat font-medium text-white hover:text-secondary px-3 py-2 rounded-md text-sm">Services</a>
+                    <a href="portfolio.html" class="font-montserrat font-medium text-white hover:text-secondary px-3 py-2 rounded-md text-sm">Portfolio</a>
+                    <a href="about.html" class="font-montserrat font-medium text-white hover:text-secondary px-3 py-2 rounded-md text-sm">About</a>
+                    <a href="contact.html" class="font-montserrat font-medium text-white hover:text-secondary px-3 py-2 rounded-md text-sm">Contact</a>
+                    <a href="contact.html" class="ml-4 inline-flex items-center px-4 py-2 border border-transparent text-sm font-montserrat font-medium rounded-md text-primary bg-secondary hover:bg-opacity-75 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-secondary">
+                        Get Started
+                    </a>
+                </div>
+                <div class="-mr-2 flex items-center md:hidden">
+                    <button id="mobile-menu-button" type="button" class="inline-flex items-center justify-center p-2 rounded-md text-white hover:text-secondary hover:bg-primary-700 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white">
+                        <span class="sr-only">Open main menu</span>
+                        <svg class="block h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile menu, show/hide based on menu state -->
+        <div id="mobile-menu" class="hidden md:hidden">
+            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+                <a href="index.html" class="font-montserrat font-medium text-secondary block px-3 py-2 rounded-md text-base">Home</a>
+                <a href="services.html" class="font-montserrat font-medium text-white hover:text-secondary block px-3 py-2 rounded-md text-base">Services</a>
+                <a href="portfolio.html" class="font-montserrat font-medium text-white hover:text-secondary block px-3 py-2 rounded-md text-base">Portfolio</a>
+                <a href="about.html" class="font-montserrat font-medium text-white hover:text-secondary block px-3 py-2 rounded-md text-base">About</a>
+                <a href="contact.html" class="font-montserrat font-medium text-white hover:text-secondary block px-3 py-2 rounded-md text-base">Contact</a>
+                <a href="contact.html" class="mt-4 block w-full px-5 py-3 text-center font-montserrat font-medium rounded-md text-primary bg-secondary hover:bg-opacity-75">
+                    Get Started
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="relative bg-primary py-20 overflow-hidden">
+        <div class="hero-gradient absolute inset-0"></div>
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <div>
+                    <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold font-montserrat text-white leading-tight mb-6">Transform Your Digital Presence</h1>
+                    <p class="text-xl text-white opacity-90 mb-8">We help businesses grow through innovative digital marketing strategies, cutting-edge technology, and data-driven results.</p>
+                    <div class="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4">
+                        <a href="contact.html" class="inline-flex items-center justify-center px-6 py-3 border border-transparent text-base font-montserrat font-medium rounded-md text-primary bg-secondary hover:bg-opacity-90 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-secondary">
+                            Get Started
+                        </a>
+                        <a href="services.html" class="inline-flex items-center justify-center px-6 py-3 border border-white text-base font-montserrat font-medium rounded-md text-white hover:bg-white hover:bg-opacity-10 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-white">
+                            Our Services
+                        </a>
+                    </div>
+                </div>
+                <div class="hidden lg:block">
+                    <img src="https://images.unsplash.com/photo-1551434678-e076c223a692?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80" alt="Digital Marketing Team" class="rounded-lg shadow-2xl">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="py-16 bg-gray-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold font-montserrat text-reading mb-4">Our Services</h2>
+                <p class="text-lg text-gray-600 max-w-3xl mx-auto">Comprehensive digital marketing solutions tailored to your business needs</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Service 1 -->
+                <div class="bg-white rounded-lg shadow-md overflow-hidden service-card transition duration-300">
+                    <div class="p-6">
+                        <div class="text-primary text-4xl mb-4">
+                            <i class="fas fa-search"></i>
+                        </div>
+                        <h3 class="text-xl font-bold font-montserrat text-reading mb-3">SEO</h3>
+                        <p class="text-gray-600 mb-4">Improve your website's visibility in search engines and drive organic traffic with our comprehensive SEO services.</p>
+                        <a href="services.html#seo" class="inline-flex items-center text-primary font-medium">
+                            Learn More
+                            <svg class="ml-2 h-5 w-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                                <path fill-rule="evenodd" d="M10.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L12.586 11H5a1 1 0 110-2h7.586l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Service 2 -->
+                <div class="bg-white rounded-lg shadow-md overflow-hidden service-card transition duration-300">
+                    <div class="p-6">
+                        <div class="text-primary text-4xl mb-4">
+                            <i class="fas fa-bullhorn"></i>
+                        </div>
+                        <h3 class="text-xl font-bold font-montserrat text-reading mb-3">Digital Marketing</h3>
+                        <p class="text-gray-600 mb-4">Reach your target audience and drive conversions with our strategic digital marketing campaigns across multiple channels.</p>
+                        <a href="services.html#digital-marketing" class="inline-flex items-center text-primary font-medium">
+                            Learn More
+                            <svg class="ml-2 h-5 w-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                                <path fill-rule="evenodd" d="M10.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L12.586 11H5a1 1 0 110-2h7.586l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Service 3 -->
+                <div class="bg-white rounded-lg shadow-md overflow-hidden service-card transition duration-300">
+                    <div class="p-6">
+                        <div class="text-primary text-4xl mb-4">
+                            <i class="fas fa-cogs"></i>
+                        </div>
+                        <h3 class="text-xl font-bold font-montserrat text-reading mb-3">Marketing Automation</h3>
+                        <p class="text-gray-600 mb-4">Streamline your marketing processes and improve efficiency with our cutting-edge marketing automation solutions.</p>
+                        <a href="services.html#marketing-automation" class="inline-flex items-center text-primary font-medium">
+                            Learn More
+                            <svg class="ml-2 h-5 w-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                                <path fill-rule="evenodd" d="M10.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L12.586 11H5a1 1 0 110-2h7.586l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Service 4 -->
+                <div class="bg-white rounded-lg shadow-md overflow-hidden service-card transition duration-300">
+                    <div class="p-6">
+                        <div class="text-primary text-4xl mb-4">
+                            <i class="fas fa-robot"></i>
+                        </div>
+                        <h3 class="text-xl font-bold font-montserrat text-reading mb-3">AI Agents</h3>
+                        <p class="text-gray-600 mb-4">Leverage the power of artificial intelligence to enhance customer experiences and automate complex marketing tasks.</p>
+                        <a href="services.html#ai-agents" class="inline-flex items-center text-primary font-medium">
+                            Learn More
+                            <svg class="ml-2 h-5 w-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                                <path fill-rule="evenodd" d="M10.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L12.586 11H5a1 1 0 110-2h7.586l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Service 5 -->
+                <div class="bg-white rounded-lg shadow-md overflow-hidden service-card transition duration-300">
+                    <div class="p-6">
+                        <div class="text-primary text-4xl mb-4">
+                            <i class="fas fa-laptop-code"></i>
+                        </div>
+                        <h3 class="text-xl font-bold font-montserrat text-reading mb-3">Website Development</h3>
+                        <p class="text-gray-600 mb-4">Create stunning, responsive websites that not only look great but also convert visitors into customers.</p>
+                        <a href="services.html#website-development" class="inline-flex items-center text-primary font-medium">
+                            Learn More
+                            <svg class="ml-2 h-5 w-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                                <path fill-rule="evenodd" d="M10.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L12.586 11H5a1 1 0 110-2h7.586l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Service 6 -->
+                <div class="bg-white rounded-lg shadow-md overflow-hidden service-card transition duration-300">
+                    <div class="p-6">
+                        <div class="text-primary text-4xl mb-4">
+                            <i class="fas fa-pen-fancy"></i>
+                        </div>
+                        <h3 class="text-xl font-bold font-montserrat text-reading mb-3">Content Creation</h3>
+                        <p class="text-gray-600 mb-4">Engage your audience with compelling, high-quality content that tells your brand story and drives action.</p>
+                        <a href="services.html#content-creation" class="inline-flex items-center text-primary font-medium">
+                            Learn More
+                            <svg class="ml-2 h-5 w-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                                <path fill-rule="evenodd" d="M10.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L12.586 11H5a1 1 0 110-2h7.586l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="text-center mt-12">
+                <a href="services.html" class="inline-flex items-center px-6 py-3 border border-transparent text-base font-montserrat font-medium rounded-md text-white bg-action hover:bg-opacity-90 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-action">
+                    View All Services
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why We Are Best Section -->
+    <section class="py-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold font-montserrat text-reading mb-4">Why We Are Best in the Industry</h2>
+                <p class="text-lg text-gray-600 max-w-3xl mx-auto">What sets us apart from other digital marketing agencies</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+                <!-- Left Column -->
+                <div class="space-y-8">
+                    <!-- Reason 1 -->
+                    <div class="flex">
+                        <div class="flex-shrink-0">
+                            <div class="flex items-center justify-center h-12 w-12 rounded-md bg-primary text-white">
+                                <i class="fas fa-trophy"></i>
+                            </div>
+                        </div>
+                        <div class="ml-4">
+                            <h3 class="text-xl font-bold font-montserrat text-reading mb-2">Proven Results</h3>
+                            <p class="text-gray-600">Our track record speaks for itself. We've consistently delivered measurable results for clients across various industries, helping them achieve significant growth in traffic, leads, and revenue.</p>
+                        </div>
+                    </div>
+
+                    <!-- Reason 2 -->
+                    <div class="flex">
+                        <div class="flex-shrink-0">
+                            <div class="flex items-center justify-center h-12 w-12 rounded-md bg-primary text-white">
+                                <i class="fas fa-users-cog"></i>
+                            </div>
+                        </div>
+                        <div class="ml-4">
+                            <h3 class="text-xl font-bold font-montserrat text-reading mb-2">Expert Team</h3>
+                            <p class="text-gray-600">Our team consists of specialists in each area of digital marketing, from SEO and content creation to paid advertising and web development. This diverse expertise allows us to develop comprehensive strategies that address all aspects of your online presence.</p>
+                        </div>
+                    </div>
+
+                    <!-- Reason 3 -->
+                    <div class="flex">
+                        <div class="flex-shrink-0">
+                            <div class="flex items-center justify-center h-12 w-12 rounded-md bg-primary text-white">
+                                <i class="fas fa-cogs"></i>
+                            </div>
+                        </div>
+                        <div class="ml-4">
+                            <h3 class="text-xl font-bold font-montserrat text-reading mb-2">Cutting-Edge Technology</h3>
+                            <p class="text-gray-600">We leverage the latest tools and technologies, including AI-powered analytics and automation platforms, to enhance our strategies and deliver superior results more efficiently.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Column -->
+                <div class="space-y-8">
+                    <!-- Reason 4 -->
+                    <div class="flex">
+                        <div class="flex-shrink-0">
+                            <div class="flex items-center justify-center h-12 w-12 rounded-md bg-primary text-white">
+                                <i class="fas fa-user-tie"></i>
+                            </div>
+                        </div>
+                        <div class="ml-4">
+                            <h3 class="text-xl font-bold font-montserrat text-reading mb-2">Personalized Approach</h3>
+                            <p class="text-gray-600">We don't believe in one-size-fits-all solutions. Each client receives a customized strategy tailored to their specific industry, target audience, goals, and challenges.</p>
+                        </div>
+                    </div>
+
+                    <!-- Reason 5 -->
+                    <div class="flex">
+                        <div class="flex-shrink-0">
+                            <div class="flex items-center justify-center h-12 w-12 rounded-md bg-primary text-white">
+                                <i class="fas fa-chart-pie"></i>
+                            </div>
+                        </div>
+                        <div class="ml-4">
+                            <h3 class="text-xl font-bold font-montserrat text-reading mb-2">Comprehensive Reporting</h3>
+                            <p class="text-gray-600">Transparency is key to our client relationships. We provide detailed, easy-to-understand reports that clearly demonstrate the impact of our work and the ROI of your marketing investment.</p>
+                        </div>
+                    </div>
+
+                    <!-- Reason 6 -->
+                    <div class="flex">
+                        <div class="flex-shrink-0">
+                            <div class="flex items-center justify-center h-12 w-12 rounded-md bg-primary text-white">
+                                <i class="fas fa-rocket"></i>
+                            </div>
+                        </div>
+                        <div class="ml-4">
+                            <h3 class="text-xl font-bold font-montserrat text-reading mb-2">Agile Methodology</h3>
+                            <p class="text-gray-600">The digital landscape changes rapidly, and so do we. Our agile approach allows us to quickly adapt strategies based on performance data, industry shifts, and emerging opportunities.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="py-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold font-montserrat text-reading mb-4">Why Choose SNR Digital</h2>
+                <p class="text-lg text-gray-600 max-w-3xl mx-auto">We combine creativity, technology, and strategy to deliver exceptional results for our clients</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Feature 1 -->
+                <div class="bg-white rounded-lg shadow-md p-8 transition duration-300 hover:shadow-xl">
+                    <div class="text-primary text-4xl mb-4">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3 class="text-xl font-bold font-montserrat text-reading mb-3">Data-Driven Approach</h3>
+                    <p class="text-gray-600">We make decisions based on data, not assumptions. Our strategies are informed by thorough research, analytics, and continuous performance monitoring.</p>
+                </div>
+
+                <!-- Feature 2 -->
+                <div class="bg-white rounded-lg shadow-md p-8 transition duration-300 hover:shadow-xl">
+                    <div class="text-primary text-4xl mb-4">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h3 class="text-xl font-bold font-montserrat text-reading mb-3">Expert Team</h3>
+                    <p class="text-gray-600">Our team consists of specialists in each area of digital marketing, from SEO and content creation to paid advertising and web development.</p>
+                </div>
+
+                <!-- Feature 3 -->
+                <div class="bg-white rounded-lg shadow-md p-8 transition duration-300 hover:shadow-xl">
+                    <div class="text-primary text-4xl mb-4">
+                        <i class="fas fa-rocket"></i>
+                    </div>
+                    <h3 class="text-xl font-bold font-montserrat text-reading mb-3">Results-Focused</h3>
+                    <p class="text-gray-600">We measure our success by the results we deliver for our clients. Every strategy and tactic is designed with clear objectives and measurable outcomes in mind.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reviews Section -->
+    <section class="py-16 bg-gray-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold font-montserrat text-reading mb-4">What Our Clients Say</h2>
+                <p class="text-lg text-gray-600 max-w-3xl mx-auto">Don't just take our word for it - hear from some of our satisfied clients</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Review 1 -->
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <div class="flex items-center mb-4">
+                        <div class="text-yellow-400 flex">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 mb-6 italic">"SNR Digital Marketing transformed our online presence completely. Their SEO strategies increased our organic traffic by 150% in just 6 months, and their content marketing approach has established us as thought leaders in our industry."</p>
+                    <div class="flex items-center">
+                        <div class="h-10 w-10 rounded-full bg-primary flex items-center justify-center text-white font-bold">
+                            JD
+                        </div>
+                        <div class="ml-3">
+                            <h4 class="font-bold text-reading">John Doe</h4>
+                            <p class="text-sm text-gray-500">CEO, Tech Innovations</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Review 2 -->
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <div class="flex items-center mb-4">
+                        <div class="text-yellow-400 flex">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 mb-6 italic">"Working with SNR has been a game-changer for our e-commerce business. Their PPC campaigns delivered a 300% ROI, and their email marketing strategies have significantly improved our customer retention rates. Highly recommended!"</p>
+                    <div class="flex items-center">
+                        <div class="h-10 w-10 rounded-full bg-primary flex items-center justify-center text-white font-bold">
+                            JS
+                        </div>
+                        <div class="ml-3">
+                            <h4 class="font-bold text-reading">Jane Smith</h4>
+                            <p class="text-sm text-gray-500">Marketing Director, Fashion Outlet</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Review 3 -->
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <div class="flex items-center mb-4">
+                        <div class="text-yellow-400 flex">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 mb-6 italic">"The team at SNR Digital Marketing truly understands the unique challenges of the healthcare industry. Their compliant marketing strategies helped us reach our target audience effectively while maintaining the highest standards of privacy and ethics."</p>
+                    <div class="flex items-center">
+                        <div class="h-10 w-10 rounded-full bg-primary flex items-center justify-center text-white font-bold">
+                            RJ
+                        </div>
+                        <div class="ml-3">
+                            <h4 class="font-bold text-reading">Dr. Robert Johnson</h4>
+                            <p class="text-sm text-gray-500">Founder, HealthFirst Clinic</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="text-center mt-12">
+                <a href="about.html#testimonials" class="inline-flex items-center px-6 py-3 border border-transparent text-base font-montserrat font-medium rounded-md text-white bg-action hover:bg-opacity-90 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-action">
+                    View More Testimonials
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Subscribe Section -->
+    <section class="py-16 bg-primary">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="lg:flex lg:items-center lg:justify-between">
+                <div class="lg:w-1/2">
+                    <h2 class="text-3xl md:text-4xl font-bold font-montserrat text-white mb-4">Stay Updated with Digital Marketing Trends</h2>
+                    <p class="text-lg text-white opacity-90 mb-8 lg:mb-0">Subscribe to our newsletter for the latest industry insights, tips, and strategies to keep your business ahead of the competition.</p>
+                </div>
+                <div class="lg:w-1/2 lg:pl-8">
+                    <form class="space-y-4 sm:flex sm:space-y-0">
+                        <div class="flex-grow">
+                            <label for="email-address" class="sr-only">Email address</label>
+                            <input id="email-address" name="email" type="email" autocomplete="email" required class="w-full px-5 py-3 border-white focus:ring-white focus:border-white rounded-l-md" placeholder="Enter your email">
+                        </div>
+                        <div class="sm:ml-3">
+                            <button type="submit" class="w-full flex items-center justify-center px-5 py-3 border border-transparent text-base font-montserrat font-medium rounded-r-md text-primary bg-white hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-white">
+                                Subscribe
+                            </button>
+                        </div>
+                    </form>
+                    <p class="mt-3 text-sm text-white opacity-75">We respect your privacy. Unsubscribe at any time.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-reading text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Company Info -->
+                <div>
+                    <h3 class="text-xl font-bold font-montserrat mb-4">SNR Digital Marketing</h3>
+                    <p class="mb-4">Transforming businesses through innovative digital marketing strategies and solutions.</p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-white hover:text-action transition-colors duration-300">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="text-white hover:text-action transition-colors duration-300">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="text-white hover:text-action transition-colors duration-300">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="#" class="text-white hover:text-action transition-colors duration-300">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Quick Links -->
+                <div>
+                    <h3 class="text-xl font-bold font-montserrat mb-4">Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="index.html" class="text-white hover:text-action transition-colors duration-300">Home</a></li>
+                        <li><a href="about.html" class="text-white hover:text-action transition-colors duration-300">About Us</a></li>
+                        <li><a href="services.html" class="text-white hover:text-action transition-colors duration-300">Services</a></li>
+                        <li><a href="portfolio.html" class="text-white hover:text-action transition-colors duration-300">Portfolio</a></li>
+                        <li><a href="contact.html" class="text-white hover:text-action transition-colors duration-300">Contact Us</a></li>
+                    </ul>
+                </div>
+
+                <!-- Services -->
+                <div>
+                    <h3 class="text-xl font-bold font-montserrat mb-4">Services</h3>
+                    <ul class="space-y-2">
+                        <li><a href="services.html#seo" class="text-white hover:text-action transition-colors duration-300">SEO</a></li>
+                        <li><a href="services.html#digital-marketing" class="text-white hover:text-action transition-colors duration-300">Digital Marketing</a></li>
+                        <li><a href="services.html#marketing-automation" class="text-white hover:text-action transition-colors duration-300">Marketing Automation</a></li>
+                        <li><a href="services.html#ai-agents" class="text-white hover:text-action transition-colors duration-300">AI Agents</a></li>
+                        <li><a href="services.html#website-development" class="text-white hover:text-action transition-colors duration-300">Website Development</a></li>
+                        <li><a href="services.html#content-creation" class="text-white hover:text-action transition-colors duration-300">Content Creation</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact Us -->
+                <div>
+                    <h3 class="text-xl font-bold font-montserrat mb-4">Contact Us</h3>
+                    <ul class="space-y-2">
+                        <li class="flex items-start">
+                            <i class="fas fa-map-marker-alt mt-1 mr-3"></i>
+                            <span>123 Marketing Street, Digital City, DC 12345</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-phone-alt mr-3"></i>
+                            <span>+1 (555) 123-4567</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-envelope mr-3"></i>
+                            <span>info@snrdigital.com</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="border-t border-gray-700 mt-8 pt-8 text-center">
+                <p>&copy; 2023 SNR Digital Marketing. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script>
+        // Mobile menu toggle
+        document.getElementById('mobile-menu-button').addEventListener('click', function() {
+            const mobileMenu = document.getElementById('mobile-menu');
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const targetId = this.getAttribute('href');
+                if (targetId === '#') return;
+                
+                const targetElement = document.querySelector(targetId);
+                if (targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 100,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html>
